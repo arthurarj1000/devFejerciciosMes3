@@ -1,4 +1,4 @@
 // EJERCICIO 1
-function myfunction(pila, número){
-    
+function obtenerElementos(pila, cantidad){
+
 }
