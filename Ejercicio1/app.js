@@ -64,4 +64,84 @@
 //   recorridoVuelta("Su casa", `Mi casa`);
 
 // EJERCICIO 4
+// function almacen(contenedor,cambioViejo,cambioNuevo,){
+//     let encontrado=false;
+//         while (!encontrado && contenedor.length > 0) {
+//                const elemento = contenedor.pop();
+//                if (elemento === cambioViejo) {
+//                 contenedor.push(cambioNuevo);
+//                  encontrado = true;
+//                }
+//              }
+
+//              contenedor.push(`3`,`2`,`1`);
+          
+//              return contenedor;
+// }
+
+// const contenedorTomar=`5`;
+// const contenedores=[`10`,`9`,`8`,`7`,`6`,`5`,`4`,`3`,`2`,`1`];
+// console.log(`Quiero el contenedor ${contenedorTomar} del almacén:`, contenedores);
+// const muevo=[`4`,`3`,`2`,`1`];
+// console.log(`Muevo contenedores:`, muevo);
+// const contenedorTome=contenedorTomar;
+// console.log(`Tomo y me llevo el contenedor:`, contenedorTome);
+// const resultado= almacen(contenedores,contenedorTomar,`4`);
+// console.log(`Reordenamos contenedores:`,resultado);
+
+// OTRA MANERA DE HACERLO
+// class Almacen {
+//     constructor(capacidad) {
+//       this.capacidad = capacidad;
+//       this.pilaContenedores = [];
+//     }
+  
+//     apilarContenedor(id) {
+//       if (this.pilaContenedores.length < this.capacidad) {
+//         this.pilaContenedores.push(id);
+//         console.log(`Contenedor ${id} apilado.`);
+//       } else {
+//         console.log('El almacén está lleno, no se puede apilar más contenedores.');
+//       }
+//     }
+  
+//     retirarContenedorEspecifico(id) {
+//       const pilaTemporal = [];
+  
+//       while (this.pilaContenedores.length > 0) {
+//         const contenedorActual = this.pilaContenedores.pop();
+  
+//         if (contenedorActual === id) {
+//           console.log(`Contenedor ${id} retirado.`);
+//           break;
+//         } else {
+//           pilaTemporal.push(contenedorActual);
+//         }
+//       }
+  
+//       // Regresar los contenedores a su lugar original
+//       while (pilaTemporal.length > 0) {
+//         this.pilaContenedores.push(pilaTemporal.pop());
+//       }
+//     }
+  
+//     mostrarPilaContenedores() {
+//       console.log('Pila de contenedores:', this.pilaContenedores);
+//     }
+//   }
+  
+//   // Ejemplo de uso
+//   const almacen = new Almacen(5);
+  
+//   almacen.apilarContenedor(1);
+//   almacen.apilarContenedor(2);
+//   almacen.apilarContenedor(3);
+//   almacen.apilarContenedor(4);
+//   almacen.apilarContenedor(5);
+  
+//   almacen.mostrarPilaContenedores();
+  
+//   almacen.retirarContenedorEspecifico(3);
+  
+//   almacen.mostrarPilaContenedores();
   
